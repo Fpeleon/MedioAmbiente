@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  baseUrl : 'http://patatas-air.s3.amazonaws.com/cities',   
+  baseUrlAir:'http://patatas-air.s3.amazonaws.com/devices',
+  
 };
 
 /*

@@ -1,0 +1,28 @@
+<section class="resumen animated fadeIn">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-12"> 
+          <a routerLink="/Home" class="nounderline">
+          <h1 >
+             PRUEBA TEKUS</h1>
+             </a>
+        </div>
+        <div class="col-md-12 estado">
+          <p>
+             Resumén</p>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-3">
+              <div class="relleno">
+                <span>Emergencia</span><br><a class="emergencia" routerLink="/Home/2">{{CityEmergency}}</a></div>
+            </div>
+            <div class="col-3">
+              <div class="relleno1"><span>Alerta</span><br><a class="alerta" routerLink="/Home/1"> {{CityAlert}}</a></div>
+            </div>
+            <div class="col-3">
+              <div class="relleno2"><span>Normal</span><br><a class="estable" routerLink="/Home/0">{{CityNormal}}</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

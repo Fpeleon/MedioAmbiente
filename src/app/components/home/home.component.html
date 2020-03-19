@@ -1,0 +1,14 @@
+<app-resume [CityAlert]="CountCityAlert" [CityEmergency]="CountCityEmergency" [CityNormal]="CountCityNormal"></app-resume>
+<section class="descripcion animated fadeIn">
+    <div class="container">
+      <div class="row detalle">
+        <div class="col-12">
+          <p class="title">Detalle</p>
+        </div>
+       <div class="col-md-3" *ngFor="let item of CityWithAirs;let i= index;">
+        <app-city-card class="m-2"  [CityComplete]="item">
+        </app-city-card >   
+       </div>
+      </div>
+    </div>
+  </section>

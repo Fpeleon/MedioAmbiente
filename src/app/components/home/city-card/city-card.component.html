@@ -1,0 +1,26 @@
+<div class="col mb-2">
+    <div class="container-color " [ngClass]="{'container-color-orange':CityComplete.AirQuality==1,'container-color-red':CityComplete.AirQuality==2,'container-color-green':CityComplete.AirQuality==0}">
+      <div class="row">
+        <div class="col-md-12">
+          <ul>
+            <li>{{CityComplete.CityId}}</li>
+            <li>{{CityComplete.LastActivity}}</li>
+            <li>{{CityComplete.Temperature}}ºC</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <p class="text-muted"><small>{{CityComplete.Name}}</small></p>
+          <p>{{CityComplete.NameCity}}</p>
+          
+        </div>
+        <div class="col-md-6">
+          <div class="icon">
+            <i *ngIf="CityComplete.StormLevel=='none'" class="material-icons"> wb_sunny</i>
+            <i *ngIf="CityComplete.StormLevel=='electric'" class="material-icons"> cloud</i>
+            <i *ngIf="CityComplete.StormLevel=='radioactive'" class="material-icons"> flash_on</i>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

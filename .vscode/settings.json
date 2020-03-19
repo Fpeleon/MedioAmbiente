@@ -1,0 +1,9 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.deploySubpath": "dist\\andresproject",
+    "appService.showBuildDuringDeployPrompt": false,
+    "appService.defaultWebAppToDeploy": "/subscriptions/0a9f03a1-9097-4d4b-aa0e-ace3aeb0cf86/resourceGroups/hbravoal/providers/Microsoft.Web/sites/tekuprueba"
+}
